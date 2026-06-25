@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paulo Henrique | Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-mode">
+
+  <!-- =============================
+       CABEÇALHO / NAVEGAÇÃO FIXA
+       ============================= -->
+  <header id="header">
+    <div class="header-inner">
+
+      <!-- Logo / nome do portfólio -->
+      <a href="#sobre" class="logo">Paulo<span>Dev</span></a>
+
+      <!-- Menu de navegação principal -->
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#sobre"    class="nav-link">Sobre mim</a></li>
+          <li><a href="#formacao" class="nav-link">Formação</a></li>
+          <li><a href="#portfolio"class="nav-link">Portfólio</a></li>
+          <li><a href="#contato"  class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Controles do cabeçalho: tema claro/escuro + hamburguer mobile -->
+      <div class="header-controls">
+        <!-- Botão de alternância de tema (JavaScript controla a troca) -->
+        <button id="theme-toggle" aria-label="Alternar tema">
+          <span id="theme-icon">🌙</span>
+        </button>
+
+        <!-- Botão hamburguer exibido apenas em telas pequenas -->
+        <button id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Overlay que fecha o menu mobile ao clicar fora -->
+  <div id="nav-overlay"></div>
+
+  <!-- =============================
+       SEÇÃO 1 – SOBRE MIM
+       ============================= -->
+  <section id="sobre" class="section">
+    <div class="container">
+
+      <!-- Hero: apresentação rápida -->
+      <div class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Olá, mundo 👋</p>
+          <h1>Paulo Henrique<br /><span class="accent">Silva Rocha</span></h1>
+          <p class="tagline">Estudante de Análise e Desenvolvimento de Sistemas</p>
+          <a href="#contato" class="btn-primary">Fale comigo</a>
+        </div>
+        <!-- Avatar com iniciais – sem depender de imagem externa -->
+        <div class="avatar" aria-hidden="true">
+          <span>PH</span>
+        </div>
+      </div>
+
+      <!-- Cards de informações pessoais -->
+      <div class="cards-grid">
+
+        <div class="card">
+          <h3>Quem sou</h3>
+          <p>
+            Meu nome é Paulo Henrique Silva Rocha. Sou estudante de ADS na UNINTER,
+            no 2º semestre do período letivo B de 2026. Tenho interesse em
+            desenvolvimento web, tecnologia e inovação.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Hobbies</h3>
+          <ul class="hobby-list">
+            <li>🎮 Video games</li>
+            <li>🎬 Séries e filmes</li>
+            <li>🏋️ Academia</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Objetivo</h3>
+          <p>
+            Construir uma carreira sólida na área de tecnologia, desenvolvendo
+            habilidades em programação web e sistemas, e contribuindo com projetos
+            que gerem impacto real.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================
+       SEÇÃO 2 – FORMAÇÃO
+       ============================= -->
+  <section id="formacao" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Formação</h2>
+      <p class="section-subtitle">Minha trajetória acadêmica e educacional</p>
+
+      <!-- Timeline de formação -->
+      <div class="timeline">
+
+        <!-- Item 1: Graduação em andamento -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2026 – Em andamento</span>
+            <h3>Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
+            <p class="institution">UNINTER – Centro Universitário Internacional</p>
+            <p>
+              Curso superior de tecnologia com foco em desenvolvimento de software,
+              banco de dados, redes e fundamentos da programação web. Atualmente
+              cursando o 2º semestre do período letivo B.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2: Ensino Médio -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Concluído</span>
+            <h3>Ensino Médio Completo</h3>
+            <p class="institution">Escola Pública</p>
+            <p>
+              Conclusão do ensino médio regular, base para ingresso no ensino
+              superior tecnológico.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Habilidades técnicas adquiridas no curso -->
+      <div class="skills-block">
+        <h3>Habilidades em desenvolvimento</h3>
+        <div class="skills-list">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Lógica de Programação</span>
+          <span class="skill-tag">Git & GitHub</span>
+          <span class="skill-tag">Banco de Dados</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================
+       SEÇÃO 3 – PORTFÓLIO
+       ============================= -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2 class="section-title">Portfólio</h2>
+      <p class="section-subtitle">Projetos e trabalhos realizados</p>
+
+      <!-- Grade de projetos -->
+      <div class="projects-grid">
+
+        <!-- Projeto 1: RedOwl -->
+        <div class="project-card">
+          <div class="project-icon">🦉</div>
+          <h3>RedOwl Agency</h3>
+          <p>
+            Participação em projeto de identidade visual e presença digital para a
+            <strong>RedOwl</strong>, agência de marketing digital com foco em
+            gestão de redes sociais, tráfego pago e branding para pequenas e
+            médias empresas.
+          </p>
+          <div class="project-tags">
+            <span>Marketing Digital</span>
+            <span>Branding</span>
+            <span>Redes Sociais</span>
+          </div>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" class="btn-outline">
+            Ver projeto ↗
+          </a>
+        </div>
+
+        <!-- Projeto 2: Este portfólio -->
+        <div class="project-card">
+          <div class="project-icon">💻</div>
+          <h3>Portfólio Pessoal</h3>
+          <p>
+            Desenvolvimento deste portfólio online utilizando HTML5, CSS3 puro e
+            JavaScript vanilla. O site conta com navegação por âncoras, tema
+            claro/escuro, menu responsivo para mobile e validação de formulário.
+          </p>
+          <div class="project-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+          <a href="https://github.com" target="_blank" rel="noopener" class="btn-outline">
+            Ver código ↗
+          </a>
+        </div>
+
+        <!-- Projeto 3: Atividades acadêmicas -->
+        <div class="project-card">
+          <div class="project-icon">📚</div>
+          <h3>Projetos Acadêmicos</h3>
+          <p>
+            Atividades práticas desenvolvidas ao longo do curso de ADS na UNINTER,
+            incluindo exercícios de lógica de programação, estrutura de dados e
+            fundamentos de sistemas web.
+          </p>
+          <div class="project-tags">
+            <span>ADS</span>
+            <span>UNINTER</span>
+            <span>Programação</span>
+          </div>
+          <a href="https://github.com" target="_blank" rel="noopener" class="btn-outline">
+            Ver repositório ↗
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================
+       SEÇÃO 4 – CONTATO
+       ============================= -->
+  <section id="contato" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Contato</h2>
+      <p class="section-subtitle">Vamos conversar? Preencha o formulário abaixo</p>
+
+      <div class="contact-wrapper">
+
+        <!-- Informações de contato -->
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <strong>E-mail</strong>
+              <p>paulosrocha2002@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🎓</span>
+            <div>
+              <strong>Instituição</strong>
+              <p>UNINTER – ADS</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Localização</strong>
+              <p>Brasil</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário de contato com validação em JavaScript -->
+        <form id="contact-form" novalidate>
+
+          <!-- Campo: Nome -->
+          <div class="form-group">
+            <label for="nome">Nome completo <span class="required">*</span></label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Seu nome"
+              autocomplete="name"
+            />
+            <!-- Mensagem de erro exibida pelo JavaScript -->
+            <span class="error-msg" id="erro-nome"></span>
+          </div>
+
+          <!-- Campo: E-mail -->
+          <div class="form-group">
+            <label for="email">E-mail <span class="required">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seuemail@exemplo.com"
+              autocomplete="email"
+            />
+            <span class="error-msg" id="erro-email"></span>
+          </div>
+
+          <!-- Campo: Mensagem -->
+          <div class="form-group">
+            <label for="mensagem">Mensagem <span class="required">*</span></label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="5"
+              placeholder="Escreva sua mensagem aqui..."
+            ></textarea>
+            <span class="error-msg" id="erro-mensagem"></span>
+          </div>
+
+          <!-- Botão de envio -->
+          <button type="submit" class="btn-primary btn-full">
+            Enviar mensagem
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================
+       RODAPÉ
+       ============================= -->
+  <footer id="footer">
+    <div class="container">
+      <p>
+        © 2026 Paulo Henrique Silva Rocha · Desenvolvido com HTML5, CSS3 e JavaScript
+      </p>
+    </div>
+  </footer>
+
+  <!-- =============================
+       MODAL DE CONFIRMAÇÃO
+       Exibido pelo JavaScript após o envio do formulário com sucesso
+       ============================= -->
+  <div id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <div class="modal-icon">✅</div>
+      <h2 id="modal-title">Mensagem enviada!</h2>
+      <p>Obrigado pelo contato, Paulo responderá em breve.</p>
+      <button id="modal-close" class="btn-primary">Fechar</button>
+    </div>
+  </div>
+
+  <!-- Arquivo JavaScript externo -->
+  <script src="script.js"></script>
+
+</body>
+</html>
